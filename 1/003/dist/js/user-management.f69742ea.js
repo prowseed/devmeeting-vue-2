@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["user-management"],{c66d:function(e,n,t){"use strict";t.r(n);var i=function(){var e=this,n=e.$createElement;e._self._c;return e._m(0)},l=[function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",{staticClass:"profile"},[t("h1",[e._v("This is an profile page")])])}],r={name:"profile"},s=r,a=t("2877"),o=Object(a["a"])(s,i,l,!1,null,null,null);o.options.__file="Profile.vue";n["default"]=o.exports}}]);
+//# sourceMappingURL=user-management.f69742ea.js.map
