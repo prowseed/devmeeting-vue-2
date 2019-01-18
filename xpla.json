@@ -1,0 +1,22 @@
+{
+    "xpla.version": 1,
+    "name": "Vue.js DevMeeting 2",
+    "author": {
+      "name": "Krystian Fras",
+      "link": "https://github.com/krystian50"
+    },
+    "date": "20th October 2018",
+    "link": "http://bit.ly/devmeeting-vue",
+    "dirs": [
+      {
+        "name": "1",
+        "title": "Project setup and Routing",
+        "slides": [
+          {
+            "name": "1-1",
+            "title": "Project setup"
+          }
+        ]
+      }
+    ]
+  }
