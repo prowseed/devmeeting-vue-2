@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-// 3 1. @ is an alias to /src.
-// It's often good to use absolute paths, but not always
+// 3 1. In vue project @ is an alias to /src.
+// It's sometimes good to use absolute paths, but NOT ALWAYS
 import Home from '@/views/Home.vue';
+import About from '@/views/About.vue';
 
 Vue.use(Router);
 
@@ -16,7 +17,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      component: About,
     },
   ],
 });
