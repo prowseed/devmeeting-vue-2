@@ -1,0 +1,22 @@
+{
+    "xpla.version": 1,
+    "name": "Vue.js DevMeeting 2",
+    "author": {
+      "name": "Krystian Fras",
+      "link": ""
+    },
+    "date": "20th October 2018",
+    "link": "http://bit.ly/devmeeting-vue",
+    "dirs": [
+      {
+        "name": "final",
+        "title": "Final",
+        "slides": [
+          {
+            "name": "1-1-test",
+            "title": "Intro to Vue.js"
+          }
+        ]
+      }
+    ]
+  }
