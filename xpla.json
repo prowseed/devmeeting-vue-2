@@ -9,12 +9,12 @@
     "link": "http://bit.ly/devmeeting-vue",
     "dirs": [
       {
-        "name": "final",
-        "title": "Final",
+        "name": "1",
+        "title": "Project setup & Routing",
         "slides": [
           {
-            "name": "1-1-test",
-            "title": "Intro to Vue.js"
+            "name": "1-1",
+            "title": "Project setup"
           }
         ]
       }
