@@ -34,7 +34,7 @@ export default new Router({
     },
     {
       path: '/login',
-      name: 'home',
+      name: 'login',
       // 4 3. it could be a good idea to preload login page in register page
       // If you wonder about preloading, you can find more info here:
       // https://www.reddit.com/r/vuejs/comments/7exvxi/preloading_a_codesplit_vue_component_before_its/
