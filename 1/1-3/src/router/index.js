@@ -14,15 +14,22 @@ export default new Router({
     {
       path: '/user/:userId',
       name: 'user',
-      // 3 1. We will lazy load paths using webpack dynamic import
+      // 11 1. We will lazy load paths using webpack dynamic import
       // webpackChunkName will create separated file in our build called user-management.[hash].js
       component: () => import(/* webpackChunkName: "user-management" */ '@/views/User.vue'),
+      children: [
+        {
+          path: 'posts',
+          name: 'userPosts',
+          component: () => import(/* webpackChunkName: "user-management" */ '@/views/UserPosts.vue'),
+        },
+      ],
     },
     {
       path: '/register',
       name: 'register',
-      // 3 2. This import and that one bellow will go to separated file as well
-      // but it will be named as chunk-[hash].[hash2].js
+      // 3 2. This import and the one below will go to separated files
+      // and it will be named as chunk-[hash].[hash2].js
       component: () => import('@/views/Register.vue'),
     },
     {

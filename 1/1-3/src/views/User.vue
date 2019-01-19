@@ -1,5 +1,9 @@
 <template>
-  <div class="user">{{ $route.params }}</div>
+  <div>
+    <span>{{ $route.params }}</span>
+    <router-link :to="{ name: 'userPosts' }">Posts</router-link>
+    <router-view />
+  </div>
 </template>
 
 <script>
