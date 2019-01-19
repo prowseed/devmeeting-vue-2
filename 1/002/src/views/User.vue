@@ -1,6 +1,12 @@
 <template>
-  <!--2 5. The $route is a way to get informations from router  -->
-  <div>{{ $route.params }}</div>
+  <div>
+    <!--2 5. The $route is a way to get informations from router  -->
+    <span>{{ $route.params }}</span>
+    <!--2 8. and call it -->
+    <router-link :to="{ name: 'userPosts' }">Posts</router-link>
+    <!--2 7. Add nested router-view -->
+    <router-view />
+  </div>
 </template>
 
 <script>
