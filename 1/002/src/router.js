@@ -21,7 +21,7 @@ export default new Router({
       component: About,
     },
     {
-      // 2 4. And expose it through path params
+      // 2 4. And expose it by path params
       path: '/user/:userId',
       name: 'user',
       component: User,

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
-import logEnterGuard from './enter-loger.guard';
+import enterLogerGuard from './enter-loger.guard';
 
 Vue.use(Router);
 
@@ -11,12 +11,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+      // 4 10. Vue-router allows to provide some metadata
+      meta: {
+        requiresAuth: true,
+      },
     },
     {
       path: '/user/:userId',
       name: 'user',
       // 2 9. ...and use it in more generic way
-      beforeEnter: logEnterGuard,
+      beforeEnter: enterLogerGuard,
       component: () => import(/* webpackChunkName: "user-management" */ '@/views/User.vue'),
       children: [
         {
