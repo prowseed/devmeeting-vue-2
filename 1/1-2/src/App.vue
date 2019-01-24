@@ -3,7 +3,7 @@
     <div id="nav">
       <!--2 1. You can navigate by path... -->
       <router-link to="/">Home</router-link> |
-      <!--2 2. ...or by name, which is more absolute way -->
+      <!--2 2. ...or by name -->
       <router-link :to="{ name: 'about' }">About</router-link>
     </div>
     <router-view/>
