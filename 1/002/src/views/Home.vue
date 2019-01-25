@@ -14,7 +14,7 @@ export default {
   }),
   methods: {
     goToUser(id) {
-      // 2 3. You can add some params to your page, such as id
+      //2 3. You can add some params to your page, such as id
       this.$router.push({ name: 'user', params: { userId: id } });
     },
   },
