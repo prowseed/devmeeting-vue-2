@@ -34,7 +34,9 @@
       "plugin:vue/essential",
       "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "spaced-comment": ["error", "never"]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
