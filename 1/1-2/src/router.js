@@ -21,11 +21,11 @@ export default new Router({
       component: About,
     },
     {
-      //2 4. And expose it by path params
+      //2 4. The params can be exposed through path declaration
       path: '/user/:userId',
       name: 'user',
       component: User,
-      //7 6. You can also provide children routes
+      //7 5. You can also provide children routes
       children: [
         {
           path: 'posts',
