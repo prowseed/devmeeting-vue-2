@@ -21,7 +21,7 @@ export default {
   },
   //3 4. Runs when you stay in the same route, but update some params or children routes
   beforeRouteUpdate(to, from, next) {
-    //2 5. BTW this context is now your component
+    //2 5. this context is now our component
     console.log('Why are you here again??', from, to, this);
     //2 6. And because of that, next does not get the callback
     next();

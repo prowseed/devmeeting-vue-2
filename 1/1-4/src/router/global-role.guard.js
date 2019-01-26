@@ -6,9 +6,9 @@ const AuthServiceMock = {
   },
 };
 
-//15 11. You can also create global guards
+//15 11. You can create global guards
 router.beforeEach((to, from, next) => {
-  //6 12. Here we check if user is logged in
+  //6 12. Here we check if user is logged in if requiresAuth occurs in meta
   if (to.matched.some(record => record.meta.requiresAuth)) {
     //2 13. Condition with our mock service
     if (!AuthServiceMock.loggedIn()) {
@@ -18,7 +18,7 @@ router.beforeEach((to, from, next) => {
         query: { redirect: to.fullPath },
       });
     } else {
-      //5 15. allows to enter route
+      //5 15. Allows to enter route
       next();
     }
   } else {
