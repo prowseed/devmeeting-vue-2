@@ -6,9 +6,26 @@
       <!--2 2. ...or by name -->
       <router-link :to="{ name: 'about' }">About</router-link>
     </div>
+    <input type="text" v-model="userId" placeholder="user id">
+    <button @click="goToUser(userId)">Go to user</button>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'home',
+  data: () => ({
+    userId: '',
+  }),
+  methods: {
+    goToUser(id) {
+      //2/ 3. You can also navigate in script part
+      this.$router.push({ name: 'user', params: { userId: id } });
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
