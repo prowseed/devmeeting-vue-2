@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!--2 1. You can navigate by path... -->
+      <!--2/ 1. You can navigate by path... -->
       <router-link to="/">Home</router-link> |
-      <!--2 2. ...or by name -->
+      <!--2/ 2. ...or by name -->
       <router-link :to="{ name: 'about' }">About</router-link>
     </div>
     <input type="text" v-model="userId" placeholder="user id">
