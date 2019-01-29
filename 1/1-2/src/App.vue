@@ -20,7 +20,7 @@ export default {
   }),
   methods: {
     goToUser(id) {
-      //2 3. You can also navigate in script part
+      //2/ 3. You can also navigate in script part
       this.$router.push({ name: 'user', params: { userId: id } });
     },
   },
