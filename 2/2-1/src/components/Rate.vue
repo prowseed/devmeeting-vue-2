@@ -11,7 +11,7 @@
 
 <script>
 const toPercentage = value => Math.round(value * 10000) / 100;
-//1/ 4. In here we check, if value is between 0-1
+//1/ 4. Here we check, if value is between 0-1
 const between = (x, min, max) => (x >= min && x <= max);
 
 export default {
@@ -20,14 +20,14 @@ export default {
     rateValue: {
       //1/ 1. You can define props type,
       type: Number,
-      //1/ 2. requiredness
+      //1/ 2. if it's required
       required: true,
-      //1/ 3. and also define your own property validator
+      //1/ 3. and own property validator
       validator: val => between(val, 0, 1),
     },
+    //5/ 5. If value is not required, you can define default value
     color: {
       type: String,
-      //2/ 5. If value is not required, you can define default value
       required: false,
       default: 'black',
     },

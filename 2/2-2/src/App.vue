@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!--1/ 1. Generic, base component with custom two-way v-model binding -->
+    <!--5/ 1. Generic, base component with custom two-way v-model binding -->
     <AppTextarea
       v-model="textValue"
       @change="logChange"
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'app',
+  name: 'App',
   data: () => ({
     //1/ 2. Our model is just a simple property
     textValue: '',
