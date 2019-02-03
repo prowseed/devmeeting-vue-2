@@ -27,6 +27,10 @@
           {
             "name": "1-4",
             "title": "Guards"
+          },
+          {
+            "name": "1-5",
+            "title": "Tasks"
           }
         ]
       },
@@ -45,6 +49,10 @@
           {
             "name": "2-3",
             "title": "Slots"
+          },
+          {
+            "name": "2-4",
+            "title": "Tasks"
           }
         ]
       }
