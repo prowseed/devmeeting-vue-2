@@ -1,4 +1,4 @@
-// o:2
+// o:3
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';

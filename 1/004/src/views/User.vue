@@ -1,3 +1,4 @@
+// o:1
 <template>
   <div>
     <span>{{ $route.params }}</span>
@@ -7,7 +8,6 @@
 </template>
 
 <script>
-// o:1
 export default {
   name: 'user',
   //9/ 1. Runs only before the route is entered
