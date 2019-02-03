@@ -10,7 +10,7 @@
         <h3 slot="header">
           Custom header
         </h3>
-        <!--5/ 15. Or provide your own TodoList item and bind item data by slot-scope attribute -->
+        <!--5/ 15. Or provide your own TodoList item and bind data by "slot-scope" attribute -->
         <CustomTodoListItem
           slot="item"
           slot-scope="{ item }"
