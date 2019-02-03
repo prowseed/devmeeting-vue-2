@@ -1,21 +1,21 @@
-<!--12/ 7. We will create component providing todo list -->
+<!--0/ 7. We will create component providing todo list -->
 <template>
   <div class="todo-list">
-    <!--4/ 9. We will create two slots (header and item).
-    "name" is a way to create more than one slot inside component -->
+    <!--4/ 9. We will create two slots (header and item). -->
+    <!-- "name" is a way to create more than one slot inside component -->
     <slot name="header">
       <!--1/ 10. You can also define default value, when slot is not provided. -->
       <h2>Default Header</h2>
     </slot>
 
     <ul>
-      <!--4/ 11. Slot content has parent scope, but you can pass data by v-bind -->
+      <!--4/ 11. Slot content has parent scope, but you can pass some data by v-bind -->
       <slot
         v-for="todoItem in todoItems"
         name="item"
         :item="todoItem"
       >
-        <!--3/ 12. Item slot has also some default content -->
+        <!--3/ 12. Item slot has also default content -->
         <li :key="todoItem.id">
           {{ todoItem.text }}
         </li>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-//15/ 8. Component will have array defined in own state
+//15/ 8. Component will have array defined in its own state
 export default {
   data: () => ({
     todoItems: [
