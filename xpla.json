@@ -29,6 +29,24 @@
             "title": "Guards"
           }
         ]
+      },
+      {
+        "name": "2",
+        "title": "Components",
+        "slides": [
+          {
+            "name": "2-1",
+            "title": "Props"
+          },
+          {
+            "name": "2-2",
+            "title": "v-model"
+          },
+          {
+            "name": "2-3",
+            "title": "Slots"
+          }
+        ]
       }
     ]
   }
