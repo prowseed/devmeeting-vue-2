@@ -25,7 +25,7 @@ export default {
     },
   },
   computed: {
-    //3/ 4. We will override rows native html attr by seting default value
+    //3/ 4. We will override html rows attr by seting default value
     rows() {
       return this.$attrs.rows || DEFAULT_ROWS;
     },

@@ -7,15 +7,17 @@
 
       <TodoList class="todo__list">
         <!--3/ 14. However you can define your own header-->
-        <h3 slot="header">
-          Custom header
-        </h3>
-        <!--5/ 15. Or provide your own TodoList item and bind data by "slot-scope" attribute -->
-        <CustomTodoListItem
-          slot="item"
-          slot-scope="{ item }"
-          :item="item"
-        />
+        <template #header>
+          <h3>
+            Custom header
+          </h3>
+        </template>
+        <!--5/ 15. Or provide your own TodoList item and bind data by slotProps -->
+        <template v-slot:item="{ item }">
+          <CustomTodoListItem
+            :item="item"
+          />
+        </template>
       </TodoList>
     </div>
   </div>
