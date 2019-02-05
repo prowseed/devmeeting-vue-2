@@ -6,16 +6,16 @@
       <TodoList class="todo__list" />
 
       <TodoList class="todo__list">
-        <!--3/ 14. However you can define your own header-->
+        <!--5/ 14. However you can define your own header-->
         <template #header>
           <h3>
             Custom header
           </h3>
         </template>
         <!--5/ 15. Or provide your own TodoList item and bind data by slotProps -->
-        <template v-slot:item="{ item }">
+        <template v-slot:item="{ todoItem }">
           <CustomTodoListItem
-            :item="item"
+            :item="todoItem"
           />
         </template>
       </TodoList>
