@@ -33,7 +33,7 @@ export default {
     },
     exampleArrayProperty: {
       type: Array,
-      //3/ 5. If property has object type(array is also object), default must be a function
+      //3/ 5. If property has object type(array is also an object), default must be a function
       //which returns value
       required: false,
       default: () => [],
