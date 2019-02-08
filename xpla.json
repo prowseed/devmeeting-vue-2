@@ -55,6 +55,16 @@
             "title": "Tasks"
           }
         ]
+      },
+      {
+        "name": "3",
+        "title": "VueX",
+        "slides": [
+          {
+            "name": "3-1",
+            "title": "Modules"
+          }
+        ]
       }
     ]
   }
