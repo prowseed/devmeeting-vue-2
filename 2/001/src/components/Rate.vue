@@ -4,6 +4,7 @@
     :style="{ color, 'border-color': color }"
   >
     <span>
+      <!--1/ 5. and convert to percentage value  -->
       {{ toPercentage(rateValue) }} %
     </span>
   </div>
@@ -25,16 +26,16 @@ export default {
       //1/ 3. and own property validator
       validator: val => between(val, 0, 1),
     },
-    //5/ 5. If value is not required, you can define default value
+    //5/ 6. If value is not required, you can define default value
     color: {
       type: String,
       required: false,
       default: 'black',
     },
+    //6/ 7. If property has object type(array is also an object), default must be a function
+    //which returns value
     exampleArrayProperty: {
       type: Array,
-      //3/ 5. If property has object type(array is also an object), default must be a function
-      //which returns value
       required: false,
       default: () => [],
     },
