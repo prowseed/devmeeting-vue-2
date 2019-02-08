@@ -20,7 +20,7 @@ export default new Router({
     {
       path: '/user/:userId',
       name: 'user',
-      //2/ 9. ...and use it in more generic way
+      //2/ 9. and use it in more generic way
       beforeEnter: enterLogerGuard,
       component: () => import(/* webpackChunkName: "user-management" */ '@/views/User.vue'),
       children: [
