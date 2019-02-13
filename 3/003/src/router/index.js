@@ -14,7 +14,7 @@ export default new Router({
     {
       path: '/settings',
       name: 'settings',
-      component: () => import(/* webpackChunkName: "admin" */ '../views/Settings.vue'),
+      component: () => import('../views/Settings.vue'),
     },
   ],
 });
