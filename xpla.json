@@ -63,6 +63,14 @@
           {
             "name": "3-1",
             "title": "Modules"
+          },
+          {
+            "name": "3-2",
+            "title": "Repositories"
+          },
+          {
+            "name": "3-1",
+            "title": "Actions"
           }
         ]
       }
