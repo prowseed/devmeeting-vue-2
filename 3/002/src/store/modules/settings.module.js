@@ -13,7 +13,6 @@ const getters = {
   settings: store => store.settings,
 };
 
-/* eslint no-param-reassign: ["error", { "props": false }] */
 const mutations = {
   setSettings(store, settings) {
     store.settings = settings;
