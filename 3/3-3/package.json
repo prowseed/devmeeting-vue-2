@@ -41,7 +41,8 @@
     },
     "rules": {
       "no-shadow": "off",
-      "max-len": "off"
+      "max-len": "off",
+      "no-param-reassign": [2, { "props": false }]
     },
     "extends": [
       "plugin:vue/recommended",

@@ -1,5 +1,3 @@
-/* eslint no-param-reassign: ["error", { "props": false }] */
-
 import RepositoryFactory from '@/repositories/repository.factory';
 
 const settingsRepository = RepositoryFactory.get('settings');
@@ -19,8 +17,8 @@ const getters = {
 
 //5 6. mutations allow to mutate our state
 const mutations = {
-  setSettings(store, settings) {
-    store.settings = settings;
+  setSettings(store, newSettings) {
+    store.settings = newSettings;
   },
 };
 
