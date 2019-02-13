@@ -19,10 +19,10 @@
 </template>
 
 <script>
-//1 9. To simplify our store assignments we will use createNamespacedHelpers function
+//1/ 9. To simplify our store assignments we will use createNamespacedHelpers function
 import { createNamespacedHelpers } from 'vuex';
 
-//4 10. Let's create our mappers!
+//4/ 10. Let's create our mappers!
 const {
   mapGetters: mapSettingsGetters,
   mapActions: mapSettingsActions,
@@ -33,17 +33,17 @@ export default {
     newTitle: '',
   }),
   computed: {
-    //1 11. Assign getter
+    //1/ 11. Assign getter
     ...mapSettingsGetters(['settings']),
   },
   created() {
     this.getSettings();
   },
   methods: {
-    //1 13. Let's assign actions
+    //1/ 13. Let's assign actions
     ...mapSettingsActions(['getSettings']),
     onSubmit() {
-      //1 14. Remember, you can always perform interactions(actions/mutations/getters) directly by $store property
+      //1/ 14. Remember, you can always perform interactions(actions/mutations/getters) directly on $store
       this.$store.dispatch('settings/updateSettings', { ...this.settings, title: this.newTitle });
     },
   },

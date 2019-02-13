@@ -7,22 +7,22 @@ const initialState = () => ({
   settings: undefined,
 });
 
-//1 4. and assign it to our state
+//1/ 4. and assign it to our state
 const state = initialState;
 
-//3 5. getters are the way to get informations from store
+//3/ 5. getters are the way to get informations from store
 const getters = {
   settings: store => store.settings,
 };
 
-//5 6. mutations allow to mutate our state
+//5/ 6. mutations allow to mutate our state
 const mutations = {
   setSettings(store, newSettings) {
     store.settings = newSettings;
   },
 };
 
-//15 7. actions keep our business logic and can perform API calls
+//15/ 7. actions keep our business logic and can perform API calls
 const actions = {
   async getSettings(context) {
     const res = await settingsRepository.get();
@@ -40,7 +40,7 @@ const actions = {
   },
 };
 
-//7 8. At the end we export everything as our namespaced module
+//7/ 8. At the end we export everything as our namespaced module
 export default {
   namespaced: true,
   getters,
