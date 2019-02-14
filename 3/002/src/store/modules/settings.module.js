@@ -1,4 +1,4 @@
-//1/ 9. Import RepositoryFactory...
+//1/ 9. Import RepositoryFactory
 import RepositoryFactory from '@/repositories/repository.factory';
 //1/ 10. and get settings repository
 const settingsRepository = RepositoryFactory.get('settings');
