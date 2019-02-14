@@ -17,7 +17,7 @@ export default {
   data: () => ({
     //4/ 6. If you want to bind each object property,
     rate: {
-      rateValue: 0,
+      rateValue: 0.43,
       color: 'green',
     },
   }),
