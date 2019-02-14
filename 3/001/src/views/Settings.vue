@@ -22,7 +22,7 @@
 //1/ 9. To simplify our store assignments we will use createNamespacedHelpers function
 import { createNamespacedHelpers } from 'vuex';
 
-//4/ 10. Let's create our mappers!
+//4/ 10. Let's create our mapers!
 const {
   mapGetters: mapSettingsGetters,
   mapActions: mapSettingsActions,
