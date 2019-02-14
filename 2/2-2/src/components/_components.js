@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import AppTextarea from './AppTextarea.vue';
+import BaseTextarea from './BaseTextarea.vue';
 
 //1/ 10. It can be a good practise to bind base components globally
-Vue.component('AppTextarea', AppTextarea);
+Vue.component('BaseTextarea', BaseTextarea);

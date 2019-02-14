@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     //4/ 8. and customInput which will update value binded as v-model in parent
-    // by emiting "input" event from AppTextarea component
+    // by emiting "input" event from BaseTextarea component
     customInput(event) {
       this.$emit('input', event.target.value);
     },
