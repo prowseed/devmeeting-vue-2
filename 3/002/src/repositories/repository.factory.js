@@ -1,6 +1,6 @@
 import SettingsRepository from './settings.repository';
 
-//4/ 7. We will create list of all available repositories
+//4/ 7. We will create a list of all available repositories
 const repositories = {
   settings: SettingsRepository,
 };
