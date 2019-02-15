@@ -15,33 +15,30 @@
 </template>
 
 <script>
-import { createNamespacedHelpers } from 'vuex';
-import { SETTINGS_MODULE } from '@/store/modules.types';
-import { SETTINGS } from '@/store/getters.types';
+import { mapGetters, mapActions } from 'vuex';
 import { GET_SETTINGS, UPDATE_SETTINGS } from '@/store/actions.types';
-
-const {
-  mapGetters: mapSettingsGetters,
-  mapActions: mapSettingsActions,
-} = createNamespacedHelpers(SETTINGS_MODULE);
+import { SETTINGS_MODULE } from '@/store/modules.types';
 
 export default {
   data: () => ({
     newTitle: '',
   }),
   computed: {
-    ...mapSettingsGetters({
-      settings: SETTINGS,
-    }),
+    //3/ 6. Bind getters
+    ...mapGetters(SETTINGS_MODULE, [
+      'settings',
+    ]),
   },
   created() {
     this.getSettings();
   },
   methods: {
-    ...mapSettingsActions({
+    //3/ 7. Bind actions
+    ...mapActions(SETTINGS_MODULE, {
       getSettings: GET_SETTINGS,
     }),
     onSubmit() {
+      //1/ 8. But it's more common to use $store.dispatch notation
       this.$store.dispatch(SETTINGS_MODULE + UPDATE_SETTINGS, { ...this.settings, title: this.newTitle });
     },
   },
