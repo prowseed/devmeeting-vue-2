@@ -1,4 +1,3 @@
-import { SETTINGS } from '@/store/getters.types';
 import { GET_SETTINGS, UPDATE_SETTINGS } from '@/store/actions.types';
 import { SET_SETTINGS } from '@/store/mutations.types';
 import RepositoryFactory from '@/repositories/repository.factory';
@@ -12,15 +11,17 @@ const initialState = () => ({
 const state = initialState;
 
 const getters = {
-  [SETTINGS]: store => store.settings,
+  settings: store => store.settings,
 };
 
+//5/ 4. Use mutations types
 const mutations = {
   [SET_SETTINGS]: (store, settings) => {
     store.settings = settings;
   },
 };
 
+//15/ 5. Use actions types
 const actions = {
   [GET_SETTINGS]: async (context) => {
     const res = await settingsRepository.get();

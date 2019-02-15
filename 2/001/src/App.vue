@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!--3/ 7. ...it's good moment to use v-bind -->
+    <!--3/ 7. ...it's a good moment to use v-bind -->
     <Rate
       v-bind="rate"
     />
@@ -17,7 +17,7 @@ export default {
   data: () => ({
     //4/ 6. If you want to bind each object property,
     rate: {
-      rateValue: 0,
+      rateValue: 0.43,
       color: 'green',
     },
   }),

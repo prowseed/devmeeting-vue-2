@@ -42,6 +42,8 @@
     "rules": {
       "no-shadow": "off",
       "max-len": "off",
+      "spaced-comment": "off",
+      "import/prefer-default-export": "off",
       "no-param-reassign": [2, { "props": false }]
     },
     "extends": [
