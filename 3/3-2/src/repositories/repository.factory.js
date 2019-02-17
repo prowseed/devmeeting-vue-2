@@ -5,7 +5,7 @@ const repositories = {
   settings: SettingsRepository,
 };
 
-//3/ 8. RepositoryFactory is actually simple object which allows to get our repositories
+//3/ 8. RepositoryFactory is actually simple object which allows to get repositories
 const RepositoryFactory = {
   get: name => repositories[name],
 };
