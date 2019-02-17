@@ -21,7 +21,7 @@ const mutations = {
 
 const actions = {
   async getSettings(context) {
-    //1/ 11. The factory is now used to perform API calls
+    //1/ 11. The repository is now used to perform API calls
     const res = await settingsRepository.get();
 
     context.commit('setSettings', res);
