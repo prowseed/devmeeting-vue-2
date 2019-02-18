@@ -1,4 +1,4 @@
-//1/ 6. The service must be imported in our VotesRepository
+//1/ 6. The service must be imported in VotesRepository
 import FirebaseService from './firebase.service';
 
 //1/ 7. Here we define what kind of document reference we want to take from firebase

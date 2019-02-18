@@ -10,10 +10,10 @@ const config = {
   databaseURL: 'https://test2-206614.firebaseio.com',
 };
 
-//3/ 4. And initial our firebase connection
+//3/ 4. And initial firebase connection
 firebase.initializeApp(config);
 const db = firebase.firestore();
 db.settings({ timestampsInSnapshots: true });
 
-//1/ 5. At the end, we will export our firebase DB
+//1/ 5. At the end, we will export firebase DB
 export default db;
