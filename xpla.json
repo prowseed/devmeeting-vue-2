@@ -77,6 +77,24 @@
             "title": "Tasks"
           }
         ]
+      },
+      {
+        "name": "4",
+        "title": "Firebase",
+        "slides": [
+          {
+            "name": "4-1",
+            "title": "Firebase calls"
+          },
+          {
+            "name": "4-2",
+            "title": "VueXfire"
+          },
+          {
+            "name": "4-3",
+            "title": "Tasks"
+          }
+        ]
       }
     ]
   }
