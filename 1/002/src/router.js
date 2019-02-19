@@ -6,10 +6,12 @@ import User from '@/views/User.vue';
 import About from '@/views/About.vue';
 import UserPosts from '@/views/UserPosts.vue';
 
+//3/ 4. Router is a simple plugin used by Vue instance
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    //4/ 5. Path declaration
     {
       path: '/',
       name: 'home',
@@ -21,11 +23,11 @@ export default new Router({
       component: About,
     },
     {
-      //1/ 4. The params can be exposed through path declaration
+      //1/ 6. The route params can be exposed through path declaration
       path: '/user/:userId',
       name: 'user',
       component: User,
-      //7/ 5. You can provide children routes
+      //7/ 7. Children routes declaration
       children: [
         {
           path: 'posts',
