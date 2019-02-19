@@ -19,6 +19,7 @@ export default {
     TheHeader,
   },
   created() {
+    //1 5. Initialize firebase ref by calling store action
     this.$store.dispatch('votes/initVotesRef');
   },
 };
