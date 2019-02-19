@@ -36,7 +36,8 @@
     ],
     "rules": {
       "no-console": "off",
-      "spaced-comment": "off"
+      "spaced-comment": "off",
+      "no-use-before-define": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"
