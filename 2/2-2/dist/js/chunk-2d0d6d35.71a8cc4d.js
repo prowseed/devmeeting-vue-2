@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0d6d35"],{"73cf":function(e,t,n){"use strict";n.r(t);var s=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},r=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"register"},[n("h1",[e._v("This is an register page")])])}],i=(n("cadf"),n("551c"),n("097d"),{name:"register"}),c=i,a=n("2877"),l=Object(a["a"])(c,s,r,!1,null,null,null);l.options.__file="Register.vue";t["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d0d6d35.71a8cc4d.js.map
