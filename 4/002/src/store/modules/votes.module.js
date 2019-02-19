@@ -8,6 +8,7 @@ const votesRepository = RepositoryFactory.get('votes');
 const emptyOptionsObject = Object.assign({}, ...Array.from(voteOptions, k => ({ [k]: 0 })));
 const groupByVoteType = countBy('vote');
 
+//3 2. Add variable to your state which represents your firebase doc
 const initialState = () => ({
   votes: [],
 });
@@ -23,12 +24,14 @@ const getters = {
 };
 
 const actions = {
+  //5 3. Bind firebaseAction from vuexfire as your store action
   setVotesRef: firebaseAction(
     async ({ bindFirebaseRef }, ref) => {
       await bindFirebaseRef('votes', ref);
     },
   ),
 
+  //3 4. And use it directly or wrap by other action
   initVotesRef({ dispatch }) {
     dispatch('setVotesRef', votesRepository.votesRef);
   },

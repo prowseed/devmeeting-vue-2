@@ -7,13 +7,12 @@
         v-model="newTitle"
         type="text"
       >
-      <BaseButton
+      <button
         class="settings__button"
         type="submit"
-        variant="text"
       >
         Submit
-      </BaseButton>
+      </button>
     </form>
   </div>
 </template>

@@ -20,6 +20,7 @@ export default new Vuex.Store({
     votes,
     user,
   },
+  //3 1. Always bind vuexfire mutations in root store
   mutations: {
     ...firebaseMutations,
   },
