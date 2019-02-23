@@ -1,5 +1,5 @@
 <template>
-  <!--6/ 9. Let's sum it up and bind to textarea native HTML element! -->
+  <!--6/ 9. Let's bind everything to native HTML element! -->
   <textarea
     :value="value"
     :rows="rows"
@@ -17,7 +17,7 @@ export default {
   // or prevent from bind attrs to root element
   inheritAttrs: false,
   props: {
-    //4/ 7. To let our component work with custom v-model,
+    //5/ 7. To let our component work with custom v-model,
     // we have to define value property
     value: {
       type: String,
