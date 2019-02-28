@@ -7,7 +7,7 @@ const initialState = () => ({
   settings: undefined,
 });
 
-//1/ 4. and assign it to our state
+//1/ 4. and assign to our state
 const state = initialState;
 
 //3/ 5. getters are the way to get informations from store

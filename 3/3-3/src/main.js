@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import '@/components/_components';
+import '@/components/global';
 import App from './App.vue';
 import router from './router';
 import store from './store/store';
