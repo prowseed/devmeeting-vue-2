@@ -14,7 +14,7 @@ const getters = {
 };
 
 const mutations = {
-  setSettings(store, settings) {
+  SET_SETTINGS(store, settings) {
     store.settings = settings;
   },
 };
@@ -24,14 +24,14 @@ const actions = {
     //1/ 11. The repository is now used to perform API calls
     const res = await settingsRepository.get();
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },
   async updateSettings(context, payload) {
     const res = await settingsRepository.update(payload);
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },

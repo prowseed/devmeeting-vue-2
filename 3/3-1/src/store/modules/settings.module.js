@@ -17,7 +17,7 @@ const getters = {
 
 //5/ 6. mutations allow to mutate our state
 const mutations = {
-  setSettings(store, newSettings) {
+  SET_SETTINGS(store, newSettings) {
     store.settings = newSettings;
   },
 };
@@ -27,14 +27,14 @@ const actions = {
   async getSettings(context) {
     const res = await settingsRepository.get();
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },
   async updateSettings(context, payload) {
     const res = await settingsRepository.update(payload);
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },
