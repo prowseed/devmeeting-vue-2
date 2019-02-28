@@ -13,7 +13,7 @@ const getters = {
 };
 
 const mutations = {
-  setSettings(store, settings) {
+  SET_SETTINGS(store, settings) {
     store.settings = settings;
   },
 };
@@ -22,14 +22,14 @@ const actions = {
   async getSettings(context) {
     const res = await settingsRepository.get();
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },
   async updateSettings(context, payload) {
     const res = await settingsRepository.update(payload);
 
-    context.commit('setSettings', res);
+    context.commit('SET_SETTINGS', res);
 
     return res;
   },
