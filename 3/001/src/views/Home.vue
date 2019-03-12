@@ -1,28 +1,28 @@
 <template>
   <div class="home">
-    <img
-      class="home__logo"
-      alt="app logo"
-      src="https://15.polyconf.com/assets/partners/devmeetings.png"
-    >
-    <h1 class="home__title">
-      DevMeetings: warsztaty dla programistów z pasją
-    </h1>
+    <!--7/ 1. Our BaseForm keeps interface similar to native form and has input as a child -->
+    <BaseForm @submit="onSubmit()">
+      <!--4/ 2. The input is actually part of parent(Home) DOM passed to a child(BaseForm) -->
+      <input
+        v-model="form.username"
+        type="text"
+      >
+    </BaseForm>
   </div>
 </template>
-
 <script>
 export default {
   name: 'Home',
+  data: () => ({
+    form: {
+      username: '',
+    },
+  }),
+  methods: {
+    //3/ 3. At the end, after submit we log form data
+    onSubmit() {
+      console.log(this.form);
+    },
+  },
 };
 </script>
-
-<style lang="scss">
-.home {
-  &__logo {
-    width: 60%;
-    max-width: 860px;
-    margin: 100px 0;
-  }
-}
-</style>

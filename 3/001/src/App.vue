@@ -1,35 +1,44 @@
 <template>
-  <div
-    id="app"
-    class="app"
-  >
-    <TheHeader />
-    <main class="app__content">
-      <RouterView />
-    </main>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">
+        Home
+      </router-link> |
+      <router-link to="/todo">
+        Todo
+      </router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue';
-
 export default {
   name: 'App',
-  components: {
-    TheHeader,
+  methods: {
+    onClick() {
+      console.log('clicked!');
+    },
   },
 };
 </script>
 
 <style lang="scss">
-.app {
-  height: 100vh;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-
-  &__content {
-    height: calc(100% - 56px);
-    overflow: auto;
-    background: #343a40cc;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
   }
 }
 </style>
