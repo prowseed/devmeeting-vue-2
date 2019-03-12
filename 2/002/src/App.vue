@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <!--6/ 1. Generic, base component with custom two-way v-model binding -->
+    <!--7/ 1. Generic, base component with custom two-way v-model binding -->
     <BaseTextarea
       v-model="textValue"
       rows="15"
+      cols="15"
       @change="logChange"
       @input="logInput"
     />
