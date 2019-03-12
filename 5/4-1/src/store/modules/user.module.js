@@ -1,7 +1,7 @@
 import guid from '@/utils/guid.util';
 
 const initialState = () => ({
-  userId: guid(),
+  userId: null,
   superuser: true,
 });
 
@@ -12,8 +12,26 @@ const getters = {
   superuser: store => store.superuser,
 };
 
+const mutations = {
+  SET_USER_ID(store, userId) {
+    store.userId = userId;
+  },
+};
+
+const actions = {
+  setInitialUserID({ commit, getters }) {
+    if (getters.userId) {
+      return;
+    }
+
+    commit('SET_USER_ID', guid());
+  },
+};
+
 export default {
   namespaced: true,
   getters,
+  mutations,
+  actions,
   state,
 };

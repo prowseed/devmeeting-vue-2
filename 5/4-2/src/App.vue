@@ -21,6 +21,8 @@ export default {
   created() {
     //1/ 5. Initialize firebase ref by calling store action
     this.$store.dispatch('votes/initVotesRef');
+
+    this.$store.dispatch('user/setInitialUserID');
   },
 };
 </script>

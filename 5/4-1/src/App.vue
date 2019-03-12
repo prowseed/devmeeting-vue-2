@@ -20,6 +20,7 @@ export default {
   },
   created() {
     this.$store.dispatch('votes/initVotesRef');
+    this.$store.dispatch('user/setInitialUserID');
   },
 };
 </script>
