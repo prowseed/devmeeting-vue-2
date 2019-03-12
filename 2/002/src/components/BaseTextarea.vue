@@ -39,7 +39,7 @@ export default {
     },
   },
   mounted() {
-    console.log(this.$attrs);
+    console.log('$attrs:', this.$attrs);
   },
   methods: {
     //3/ 6. Input is explicitly defined to properly update value binded as v-model
