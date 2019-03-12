@@ -1,0 +1,80 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Stols part 2</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+      <body class="xp-slide">
+        <div class="xp-row with-comments">
+          
+    
+    <div class="xp-column" style="width: 65%">
+      <xp-editor active="babel.config.js" tree>
+        	<script id="babel.config.js" highlight="0-5" type="application/octetstream" src="002/babel.config.js"></script>
+	<script id="package-lock.json" highlight="0-12477" type="application/octetstream" src="002/package-lock.json"></script>
+	<script id="package.json" highlight="0-68" type="application/octetstream" src="002/package.json"></script>
+	<script id="public/favicon.ico" highlight="0" type="application/octetstream" src="002/public/favicon.ico"></script>
+	<script id="public/index.html" highlight="0-16" type="application/octetstream" src="002/public/index.html"></script>
+	<script id="src/App.vue" highlight="0-30" type="application/octetstream" src="002/src/App.vue"></script>
+	<script id="src/assets/logo.png" highlight="0-35" type="application/octetstream" src="002/src/assets/logo.png"></script>
+	<script id="src/components/BaseTextarea.vue" highlight="0-51" type="application/octetstream" src="002/src/components/BaseTextarea.vue"></script>
+	<script id="src/components/global.js" highlight="0-5" type="application/octetstream" src="002/src/components/global.js"></script>
+	<script id="src/main.js" highlight="0-9" type="application/octetstream" src="002/src/main.js"></script>
+	<script id="vue.config.js" highlight="0-3" type="application/octetstream" src="002/vue.config.js"></script>
+      </xp-editor>
+    </div>
+  
+    <div class="xp-resize-column"></div>
+    
+    <div class="xp-column" style="width: 35%">
+      <xp-preview  runner="react"></xp-preview>
+    </div>
+  
+  
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row comments">
+          <xp-annotations>
+            <header><h1>Stols part 2</h1></header>
+            <details>
+    <p style="
+        width: 100%;
+        text-align: center;
+        /* display: block; */
+        font-size: 25px;
+        margin-bottom: 43px;
+    "><strong>v-model</strong> is just a syntax sugar:</p>
+    <p style="
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        font-size: 20px;
+    ">
+
+        <span>v-model</span>
+        <span style="
+            font-size: 33px;
+            margin: 0 31px;
+            line-height: 32px;
+        ">→</span>
+        <span style="
+            margin-top: -12px;
+        ">
+            <span style="
+                display: block;
+            ">$emit('input', $event.target.value)</span>
+            <span>props: ['value']</span>
+        </span>
+    </p>
+
+</details>
+
+          </xp-annotations>
+        </div>
+      </body>
+    </html>
+  

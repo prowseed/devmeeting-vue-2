@@ -16,15 +16,5 @@ export default new Router({
       name: 'settings',
       component: () => import('../views/Settings.vue'),
     },
-    {
-      path: '/vote',
-      name: 'vote',
-      component: () => import('../views/Vote.vue'),
-    },
-    {
-      path: '/score',
-      name: 'score',
-      component: () => import('../views/Score.vue'),
-    },
   ],
 });
