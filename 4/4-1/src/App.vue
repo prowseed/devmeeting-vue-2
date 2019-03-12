@@ -18,9 +18,6 @@ export default {
   components: {
     TheHeader,
   },
-  created() {
-    this.$store.dispatch('votes/initVotesRef');
-  },
 };
 </script>
 

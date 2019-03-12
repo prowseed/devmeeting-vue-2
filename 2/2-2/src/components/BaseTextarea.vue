@@ -1,49 +1,48 @@
 <template>
-  <!--6/ 9. Let's bind everything to native HTML element! -->
+  <!--7/ 8. Let's bind everything to native HTML element! -->
   <textarea
     :value="value"
     :rows="rows"
-    v-bind="attrs"
+    v-bind="$attrs"
     @input="customInput"
     v-on="listeners"
   />
 </template>
 
 <script>
-const DEFAULT_ROWS = 10;
+const DEFAULT_ROWS = 20;
 
 export default {
   //2/ 3. Set it to false, if you want to override $attrs
-  // or prevent from bind attrs to root element
+  // or prevent from attrs binding to root element
   inheritAttrs: false,
   props: {
-    //5/ 7. To let our component work with custom v-model,
+    //5/ 7. To get v-model value from parent,
     // we have to define value property
     value: {
       type: String,
       default: '',
     },
+    //4/ 4. You can set default rows value by defining props
+    // rows is now excluded from $attrs
+    rows: {
+      type: [String, Number],
+      default: DEFAULT_ROWS,
+    },
   },
   computed: {
-    //3/ 4. We will override html rows attr by seting default value
-    rows() {
-      return this.$attrs.rows || DEFAULT_ROWS;
-    },
-    //4/ 5. Now we have to define new attrs object
-    attrs() {
-      const { rows, ...attrs } = this.$attrs;
-      return attrs;
-    },
-    //5/ 6. To make sure that every listener works (in eg. @click),
+    //5/ 5. To make sure that every listener works (in eg. @click),
     // we will bind all listeners except input listener
     listeners() {
       const { input, ...listeners } = this.$listeners;
       return listeners;
     },
   },
+  mounted() {
+    console.log(this.$attrs);
+  },
   methods: {
-    //4/ 8. and customInput which will update value binded as v-model in parent
-    // by emiting "input" event from BaseTextarea component
+    //3/ 6. Input is explicitly defined to properly update value binded as v-model
     customInput(event) {
       this.$emit('input', event.target.value);
     },

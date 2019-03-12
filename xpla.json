@@ -36,7 +36,7 @@
       },
       {
         "name": "2",
-        "title": "Components",
+        "title": "Custom v-model",
         "slides": [
           {
             "name": "2-1",
@@ -48,54 +48,64 @@
           },
           {
             "name": "2-3",
-            "title": "Slots part 1"
-          },
-          {
-            "name": "2-4",
-            "title": "Stols part 2"
-          },
-          {
-            "name": "2-5",
             "title": "Tasks"
           }
         ]
       },
       {
-        "name": "3",
-        "title": "VueX",
+        "name": "2",
+        "title": "Slots",
         "slides": [
           {
-            "name": "3-1",
-            "title": "Modules"
+            "name": "2-1",
+            "title": "Slots part 1"
           },
           {
-            "name": "3-2",
-            "title": "Repositories"
+            "name": "2-2",
+            "title": "Stols part 2"
           },
           {
-            "name": "3-3",
-            "title": "Types"
-          },
-          {
-            "name": "3-4",
+            "name": "2-3",
             "title": "Tasks"
           }
         ]
       },
       {
         "name": "4",
-        "title": "Firebase",
+        "title": "VueX",
         "slides": [
           {
             "name": "4-1",
-            "title": "Firebase calls"
+            "title": "Modules"
           },
           {
             "name": "4-2",
-            "title": "VueXfire"
+            "title": "Repositories"
           },
           {
             "name": "4-3",
+            "title": "Types"
+          },
+          {
+            "name": "4-4",
+            "title": "Tasks"
+          }
+        ]
+      },
+      {
+        "name": "5",
+        "title": "Firebase",
+        "slides": [
+          {
+            "name": "5-1",
+            "title": "Firebase calls"
+          },
+          {
+            "name": "5-2",
+            "title": "VueXfire"
+          },
+          {
+            "name": "5-3",
             "title": "Tasks"
           }
         ]

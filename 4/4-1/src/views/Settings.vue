@@ -1,43 +1,42 @@
 <template>
   <div class="settings">
+    <!--1/ 11. Value is now available in the same way as component state -->
     <span> Title: {{ settings && settings.title }}</span>
     <form @submit.prevent="onSubmit()">
       <input
         v-model="newTitle"
         type="text"
       >
-      <BaseButton
+      <button
         class="settings__button"
         type="submit"
-        variant="text"
       >
         Submit
-      </BaseButton>
+      </button>
     </form>
   </div>
 </template>
 
 <script>
-import { createNamespacedHelpers } from 'vuex';
-
-const {
-  mapGetters: mapSettingsGetters,
-  mapActions: mapSettingsActions,
-} = createNamespacedHelpers('settings');
+//1/ 9. To simplify our store assignments we will use mapers from VueX
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   data: () => ({
     newTitle: '',
   }),
   computed: {
-    ...mapSettingsGetters(['settings']),
+    //1/ 10. Assign getter
+    ...mapGetters('settings', ['settings']),
   },
   created() {
     this.getSettings();
   },
   methods: {
-    ...mapSettingsActions(['getSettings']),
+    //1/ 12. Let's assign actions
+    ...mapActions('settings', ['getSettings']),
     onSubmit() {
+      //1/ 13. Remember, you can always perform interactions(actions/mutations/getters) directly on $store
       this.$store.dispatch('settings/updateSettings', { ...this.settings, title: this.newTitle });
     },
   },

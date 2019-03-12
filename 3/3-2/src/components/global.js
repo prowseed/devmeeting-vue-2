@@ -1,4 +1,5 @@
 import Vue from 'vue';
-import BaseButton from './BaseButton.vue';
+import BaseForm from './BaseForm.vue';
 
-Vue.component('BaseButton', BaseButton);
+//1/ 10. It can be a good practise to bind base components globally
+Vue.component('BaseForm', BaseForm);

@@ -1,18 +1,11 @@
 import Vue from 'vue';
-
-import '@/components/global';
 import App from './App.vue';
 import router from './router';
-import store from './store/store';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+import '@/components/global';
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
-  store,
   render: h => h(App),
 }).$mount('#app');
-
-Vue.config.devtools = true;
