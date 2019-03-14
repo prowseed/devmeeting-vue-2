@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <!--7/ 1. Generic, base component with custom two-way v-model binding -->
+    <!--8/ 1. Generic, base component with custom two-way v-model binding -->
     <BaseTextarea
       v-model="textValue"
-      rows="15"
-      cols="15"
-      @change="logChange"
-      @input="logInput"
+      class="example-textarea"
+      rows="5"
+      cols="25"
+      label="Message"
+      @change="logChange()"
     />
   </div>
 </template>
@@ -21,9 +22,6 @@ export default {
   methods: {
     logChange() {
       console.log('change');
-    },
-    logInput() {
-      console.log('input');
     },
   },
 };
