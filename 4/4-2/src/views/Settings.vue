@@ -18,25 +18,20 @@
 </template>
 
 <script>
-import { createNamespacedHelpers } from 'vuex';
-
-const {
-  mapGetters: mapSettingsGetters,
-  mapActions: mapSettingsActions,
-} = createNamespacedHelpers('settings');
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   data: () => ({
     newTitle: '',
   }),
   computed: {
-    ...mapSettingsGetters(['settings']),
+    ...mapGetters('settings', ['settings']),
   },
   created() {
     this.getSettings();
   },
   methods: {
-    ...mapSettingsActions(['getSettings']),
+    ...mapActions('settings', ['getSettings']),
     onSubmit() {
       this.$store.dispatch('settings/updateSettings', { ...this.settings, title: this.newTitle });
     },
