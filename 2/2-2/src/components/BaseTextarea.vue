@@ -38,7 +38,7 @@ export default {
     },
   },
   computed: {
-    //5/ 7. To make sure that every listener works (in eg. @click),
+    //5/ 7. To make sure that every listener works (e.g. @click, @focus),
     // we will bind all listeners except input listener
     listeners() {
       const { input, ...listeners } = this.$listeners;
