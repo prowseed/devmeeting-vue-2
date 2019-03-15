@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!--1/ 1. You can navigate by path... -->
+      <!--1/ 5. You can navigate by path... -->
       <router-link to="/">Home</router-link> |
-      <!--1/ 2. ...or by name -->
+      <!--1/ 6. ...or by name -->
       <router-link :to="{ name: 'about' }">About</router-link>
     </div>
     <input type="text" v-model="userId" placeholder="user id">
@@ -20,7 +20,7 @@ export default {
   }),
   methods: {
     goToUser(id) {
-      //1/ 3. You can also navigate in script part
+      //1/ 7. You can also navigate in script part
       this.$router.push({ name: 'user', params: { userId: id } });
     },
   },
