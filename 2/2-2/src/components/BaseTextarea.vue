@@ -17,7 +17,7 @@
 const DEFAULT_ROWS = 20;
 
 export default {
-  //2/ 4. Set it to false, if you want to prevent from $attrs binding to root element
+  //1/ 4. Set it to false, if you want to prevent from $attrs binding to root element
   inheritAttrs: false,
   props: {
     //5/ 9. To get v-model value from parent,
