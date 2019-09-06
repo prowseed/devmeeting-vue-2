@@ -6,8 +6,8 @@ import 'firebase/firestore';
 
 //4/ 3. Let's define our firebase config
 const config = {
-  projectId: 'test2-206614',
-  databaseURL: 'https://test2-206614.firebaseio.com',
+  projectId: 'devmeetings-warsaw',
+  databaseURL: 'https://devmeetings-warsaw.firebaseio.com',
 };
 
 //3/ 4. And initial firebase connection
